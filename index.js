@@ -9045,10 +9045,10 @@ var nonAutomaticIssues = issues.reduce((totalSet, issue) => {
 
 const tbody = document.querySelector('#results')
 
-tbody.innerHTML = nonAutomaticIssues.map(issue =>
-  `<tr>
-    <td> ${issue.body} </td>
-    <td> ${issue.created_at} </td>
-    <td> ${issue.state} </td>
-  </tr> `
-).join()
+  tbody.innerHTML = nonAutomaticIssues.map(issue =>
+    `<tr>
+      <td> ${issue.body} </td>
+      <td> ${issue.created_at} </td>
+      <td> ${issue.state} </td>
+    </tr>    `
+  ).join()
